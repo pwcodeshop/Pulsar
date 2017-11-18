@@ -1,0 +1,29 @@
+<mat-toolbar color="primary" id="custNavbar">
+  <mat-toolbar-row>
+    <span> {{title}}</span>
+    <span class="example-spacer"></span>
+      
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon matTooltip="More...">more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" class="miniMenu">
+      <button mat-menu-item>
+        <mat-icon><i class="fa fa-user-circle"></i></mat-icon>
+        <span>Edit Profile</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon><i class="fa fa-bell-o"></i></mat-icon>
+        <span>Notifications</span>
+      </button>
+    <button mat-menu-item>
+        <mat-icon><i class="fa fa-sign-out"></i></mat-icon>
+        <span>Log Out</span>
+      </button>
+    </mat-menu>
+      
+  </mat-toolbar-row>
+
+</mat-toolbar>
+
+
+

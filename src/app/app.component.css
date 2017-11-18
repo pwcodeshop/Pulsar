@@ -1,0 +1,38 @@
+.fullscreen {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.example-container { /* rename this */
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background-color: #f2f2f2;
+}
+.sidenavbar {
+    padding: 20px;
+}
+mat-sidenav {
+    width: 350px;
+}
+
+mat-button {
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.copy-wrap {
+    position: fixed;
+    bottom: 0;
+}
+
+a {
+    color: rgba(0,0,0,.87);
+}
+
+@media screen and ( max-width : 568px ) {
+    mat-sidenav {
+        width: 300px;
+    }
+}

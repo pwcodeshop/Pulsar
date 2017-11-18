@@ -1,0 +1,29 @@
+.highlight {
+    color: #660066;
+}
+.mat-expansion-panel {
+    background-color: #fff;
+    transition: 0.3s;
+}
+.mat-expanded,
+.mat-expansion-panel:hover {
+/*    background-color: #4f85e2;*/
+    background-color: #660066;
+    color: #fff;
+}
+
+.mat-expanded:hover {
+    color: #fff;
+}
+.mat-expansion-panel-header-title {
+    color: inherit;
+}
+.about-source {
+    margin-top: 30px;
+}
+::ng-deep .mat-expansion-panel .mat-expansion-indicator::after {
+    color: #000;
+}
+::ng-deep .mat-expanded .mat-expansion-indicator::after {
+    color: #fff;
+}

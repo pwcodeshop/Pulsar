@@ -1,0 +1,110 @@
+<section class="container-fluid no-gutters" [@fadeIn]='state'>
+    
+    <div class="row no-gutters">
+
+        <div class="col-xl-6 col-lg-8 col-md-8 col-sm-10 ml-auto mr-auto">
+
+            <a mat-raised-button class="main-button" routerLink="/list">&lang; Back to list</a>
+            
+                <div class="profile-widget profile-wrap">
+                    
+                    <div class="row">
+
+                        <div class="col-md-6">
+
+                            <div class="profile-image">
+                                <img class="img-fluid" src="{{person.url}}">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <h2>{{person.name}}</h2>
+                            
+                            <div class="text-semi-dark">
+                                <p><span>Email:</span> {{person.email}}</p>
+                                <p><span>Type:</span> <span class="uppercase">{{person.type}}</span></p>
+                                <p><span>DOB:</span> {{person.dob}}</p>
+                            </div>
+                            
+                            <div class="action-wrap">
+                                <button mat-raised-button class="main-button" matTooltip="Edit"><mat-icon>create</mat-icon></button>
+                                <button mat-raised-button class="main-button" matTooltip="Flag this person"><mat-icon>report</mat-icon></button>
+                                <button mat-raised-button class="main-button" matTooltip="Delete"><mat-icon>delete</mat-icon></button>
+                            </div>
+                            
+                        </div><!--/col-->
+
+                    </div><!--/row-->
+                    
+                </div><!--/profile widget-->
+            
+                <div class="profile-widget">
+                    <div class="row">
+
+                        <div class="col">
+                            
+                            <h3>Date Hired</h3>
+
+                            <p class="profile-data text-semi-dark">{{person.doh}}</p>
+
+                            <h3>Supervisor</h3>
+
+                            <p class="profile-data text-semi-dark">{{person.supervisor}}</p>
+                            
+                        </div><!--/col-->
+                        
+                    </div><!--/row-->
+                    
+                </div><!--/profile widget-->
+
+
+                <div class="profile-widget">
+                    
+                    <div class="row">
+
+                        <div class="col">
+                            
+                            <h3>Bio</h3>
+                            <p class="profile-data text-semi-dark">{{person.bio}}</p>
+                            
+                        </div><!--/col-->
+                        
+                    </div><!--/row-->
+                    
+
+                </div><!--/profile widget-->
+                        
+                <div class="profile-widget">
+                    
+                    <div class="row">
+
+                        <div class="col">
+                            <h3>Files</h3>
+                            
+                            <div class="file-wrap">
+                                <mat-list>
+                                    <mat-list-item>
+                                        <mat-icon mat-list-icon>file_download</mat-icon>
+                                        <h4 mat-line>Resume</h4>
+                                        <p mat-line> Jan 1, 2014</p>
+                                    </mat-list-item>
+                                    <mat-list-item>
+                                        <mat-icon mat-list-icon>file_download</mat-icon>
+                                        <h4 mat-line>References</h4>
+                                        <p mat-line> Jan 1, 2014</p>
+                                    </mat-list-item>
+                                </mat-list>
+                            </div>
+                            
+                        </div><!--/col-->
+                        
+                    </div><!--/row-->
+
+                </div><!--/profile widget-->
+
+        </div><!--/col-->
+
+    </div><!--/row-->
+    
+</section>

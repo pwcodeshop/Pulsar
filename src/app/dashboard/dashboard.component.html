@@ -1,0 +1,73 @@
+<section class="container-fluid" [@fadeIn]='state'>
+    
+    <div class="row no-gutters">
+        
+        <div class="col-xl-6 col-lg-8 col-md-8 col-sm-10 ml-auto mr-auto">
+    
+            <h1>This is {{title}}, a <span class="highlight">sample Angular app</span></h1>
+            <h2>What's used here?</h2>
+
+            <mat-accordion id="about-app">
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header class="dash-header">
+                        <mat-panel-title>
+                            Angular 5
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p><i class="fa fa-check"></i> The latest version of the Angular framework</p>
+                    <p><i class="fa fa-check"></i> All main pieces deconstructed into components</p>
+                    <p><i class="fa fa-check"></i> Example fade animation using "vanilla" Angular</p>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Angular Material 5
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p><i class="fa fa-check"></i> Various components integrated with custom styling</p>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Mock Integrated Service
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p><i class="fa fa-check"></i> Injectable service outside of root component</p>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Result Filtering
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p><i class="fa fa-check"></i> Filter the list of employees by Type on click</p>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Other
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p><i class="fa fa-check"></i> Routing</p>
+                    <p><i class="fa fa-check"></i> Bootstrap 4</p>
+                    <p><i class="fa fa-check"></i> FontAwesome</p>
+                </mat-expansion-panel>
+
+            </mat-accordion>
+
+            <div class="about-source">
+                <h2>Source code:</h2>
+                <p>Github repo here: link it</p>
+            </div>
+            
+        </div><!--/col-->
+        
+    </div><!--/row-->
+    
+</section>
+
+

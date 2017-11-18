@@ -1,0 +1,39 @@
+.mat-card {
+    padding: 30px;
+}
+.example-card {
+/*  width: 400px;*/
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.filter-wrap {
+    padding: 20px 0 20px 0;
+}
+
+.main-button { /* because of angular or material flaw this apparently doesn't work if put in the main style sheet- has to be repeated in each component stylesheet */
+    border-radius: 4px;
+/*    color: #5b86e5;*/
+    color: #660066;
+}
+.main-button:hover {
+    color: #fff;
+}
+.mat-card .main-button {
+    margin-bottom: 16px;
+}
+.mat-card-header-text {
+    width: 100%;
+}
+.mat-card-actions, 
+.mat-card-content, 
+.mat-card-subtitle, 
+.mat-card-title {
+    margin-bottom: 25px;
+}
+
+@media screen and ( max-width : 568px ) {
+    #lastFilter {
+        margin-top: 10px;
+    }
+}
