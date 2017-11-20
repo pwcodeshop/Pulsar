@@ -1,17 +1,13 @@
-.highlight {
-    color: #660066;
-}
+
 .mat-expansion-panel {
     background-color: #fff;
     transition: 0.3s;
 }
 .mat-expanded,
 .mat-expansion-panel:hover {
-/*    background-color: #4f85e2;*/
     background-color: #660066;
     color: #fff;
 }
-
 .mat-expanded:hover {
     color: #fff;
 }

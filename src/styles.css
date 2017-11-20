@@ -1,19 +1,35 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-#custNavbar,
-.mat-menu-panel {
-    background-color: #242b3c; /*404040, 242b3c*/
-}
-.mat-menu-item,
-.mat-menu-item .mat-icon {
-    color: #fff;
-    transition: 0.3s;
-}
+/*** GLOBAL ***/
 a {
     cursor: pointer;
     color: #4d4d4d;
     border-bottom: 1px solid transparent;
     transition: 0.5s;
+}
+a:hover {
+    text-decoration: none;
+    color: #a6a6a6;
+}
+a:focus,
+.main-button:focus,
+.mat-menu-item:focus {
+    outline: none;
+}
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+.white-text {
+    color: #fff;
 }
 .text-semi-dark {
     color: rgba(102, 102, 102, 1);
@@ -21,6 +37,31 @@ a {
 .uppercase {
     text-transform: uppercase;
 }
+.highlight {
+    color: #660066;
+}
+.main-button {
+    background-color: #fff;
+}
+.main-button:hover {
+    background-color: #660660;
+}
+.main-content {
+    margin: 50px auto;
+    width: 550px;
+}
+
+#custNavbar,
+.mat-menu-panel {
+    background-color: #242b3c;
+}
+.mat-menu-item,
+.mat-menu-item .mat-icon {
+    color: #fff;
+    transition: 0.3s;
+}
+
+/*** SIDEBAR, MENU, ITEM LISTS ***/
 .mat-drawer {
     background-color: #242b3c;
 }
@@ -37,42 +78,6 @@ a {
 }
 .mat-line a {
     color: #fff !important;
-}
-a:hover {
-    text-decoration: none;
-    color: #a6a6a6;
-}
-.main-content {
-    margin: 50px auto;
-    width: 550px;
-}
-.white-text {
-    color: #fff;
-}
-
-h1 {
-    font-size: 2.2em;
-    margin-bottom: 30px;
-}
-h2 {
-    font-size: 1.8em;
-    margin-bottom: 30px;
-}
-h3 {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-}
-
-.main-button {
-    background-color: #fff;
-}
-.main-button:hover {
-    background-color: #660660;
-}
-a:focus,
-.main-button:focus,
-.mat-menu-item:focus {
-    outline: none;
 }
 .mat-expanded,
 .mat-expansion-panel:hover,

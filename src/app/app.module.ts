@@ -10,7 +10,6 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { HttpClientModule } from '@angular/common/http';
-import * as d3 from "d3";
 
 import { PersonsFilterPipe } from './shared/filter.pipe';
 import { PersonsService } from './shared/persons.service';
