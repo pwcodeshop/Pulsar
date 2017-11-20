@@ -1,23 +1,19 @@
-.mat-card {
-    padding: 30px;
-}
-.example-card {
-/*  width: 400px;*/
-    width: 100%;
-    margin-bottom: 30px;
-}
-
 .filter-wrap {
     padding: 20px 0 20px 0;
 }
-
-.main-button { /* because of angular or material flaw this apparently doesn't work if put in the main style sheet- has to be repeated in each component stylesheet */
+.main-button { /* angular flaw prevents these properties from working if put into the main stylesheet- have to duplicate across component css files */
     border-radius: 4px;
-/*    color: #5b86e5;*/
     color: #660066;
 }
-.main-button:hover {
+.main-button:hover { /* same comment as above */
     color: #fff;
+}
+.mat-card {
+    padding: 30px;
+}
+.person-card {
+    width: 100%;
+    margin-bottom: 30px;
 }
 .mat-card .main-button {
     margin-bottom: 16px;

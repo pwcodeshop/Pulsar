@@ -13,28 +13,30 @@
                 <button mat-raised-button class="main-button" id="lastFilter" [class.active]="filterBy=='staff'" (click)="filterBy='staff'">Staff</button>
             </div><!--/filter-wrap-->
             
-            <mat-card class="example-card" *ngFor="let person of (visiblePersons | personsFilter:filterBy)">
-              <mat-card-header>
-                <div mat-card-avatar class="example-header-image"><mat-icon>person</mat-icon></div>
-                <mat-card-title>{{person.name}}</mat-card-title>
-                  <mat-card-subtitle class="text-semi-dark">Type: <span class="uppercase">{{person.type}}</span></mat-card-subtitle>
-                    <mat-card-subtitle class="text-semi-dark">Date of Hire: {{person.doh}}</mat-card-subtitle>
+            <mat-card class="person-card" *ngFor="let person of (visiblePersons | personsFilter:filterBy)">
                 
-              </mat-card-header>
-              <mat-card-content>
-                <p>
-                  {{person.bio}}
-                </p>
-              </mat-card-content>
-              <mat-card-actions class="text-center">
-                  <a mat-raised-button class="main-button" [routerLink] ="['/detail', person.id]">View Profile</a>
-              </mat-card-actions>
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"><mat-icon>person</mat-icon></div>
+                    <mat-card-title>{{person.name}}</mat-card-title>
+                    <mat-card-subtitle class="text-semi-dark">Type: <span class="uppercase">{{person.type}}</span></mat-card-subtitle>
+                    <mat-card-subtitle class="text-semi-dark">Date of Hire: {{person.doh}}</mat-card-subtitle>
+                </mat-card-header>
+                
+                <mat-card-content>
+                    <p>
+                        {{person.bio}}
+                    </p>
+                </mat-card-content>
+                
+                <mat-card-actions class="text-center">
+                    <a mat-raised-button class="main-button" [routerLink] ="['/detail', person.id]">View Profile</a>
+                </mat-card-actions>
+                
             </mat-card>
             
-            
-        </div>
+        </div><!--/col-->
         
-    </div>
+    </div><!--/row-->
     
 </section>
 
