@@ -4,7 +4,7 @@
     margin-top: 20px;
 }
 .profile-widget {
-    padding: 25px; /* 25 0 25 0*/
+    padding: 25px;
     margin-bottom: 20px;
     box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
     background: #fff;
@@ -17,11 +17,11 @@
 .profile-data {
     padding-left: 20px;
 }
-.main-button {
+.main-button { /* angular flaw prevents these properties from working if put into the main stylesheet- have to duplicate across component css files */
     border-radius: 4px;
     color: #660660;
 }
-.main-button:hover {
+.main-button:hover { /* same comment as above */
     color: #fff;
 }
 .file-wrap .mat-list .mat-list-item {
@@ -30,7 +30,6 @@
 .file-wrap .mat-list-item:hover {
     background-color: transparent;
 }
-
 
 @media screen and ( max-width : 1020px ) {
     .profile-widget .mat-raised-button {

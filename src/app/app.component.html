@@ -1,45 +1,44 @@
-<mat-sidenav-container fullscreen class="example-container">
+<mat-sidenav-container fullscreen class="sidenav-container">
     
-  <mat-sidenav #sidenav class="sidenavbar">
-      
-<!--      <img src="../assets/dash-logo.png">-->
+    <mat-sidenav #sidenav class="sidenavbar">
+
         <h3 class="white-text"> {{title}}</h3>
-      
+
         <mat-list>
-          <mat-list-item>
-            <mat-icon matListIcon>dashboard</mat-icon>
-            <h3 matLine><a routerLink="/dashboard">Dashboard</a></h3>
-            <p matLine>
-              <span>Activity snapshot</span>
-            </p>
-          </mat-list-item>
-            
-        <mat-list-item>
-            <mat-icon matListIcon>face</mat-icon>
-            <h3 matLine><a routerLink="/list">Your People</a></h3>
-            <p matLine>
-              <span>Resources profiles</span>
-            </p>
-          </mat-list-item>
-            
-        <mat-list-item>
-            <mat-icon matListIcon>trending_up</mat-icon>
-            <h3 matLine>Performance Reviews</h3>
-            <p matLine>
-              <span>-- coming soon!</span>
-            </p>
-          </mat-list-item>
+            <mat-list-item>
+                <mat-icon matListIcon>dashboard</mat-icon>
+                <h3 matLine><a routerLink="/dashboard">Dashboard</a></h3>
+                <p matLine>
+                    <span>Activity snapshot</span>
+                </p>
+            </mat-list-item>
+
+            <mat-list-item>
+                <mat-icon matListIcon>face</mat-icon>
+                <h3 matLine><a routerLink="/list">Your People</a></h3>
+                <p matLine>
+                    <span>Resources profiles</span>
+                </p>
+            </mat-list-item>
+
+            <mat-list-item>
+                <mat-icon matListIcon>trending_up</mat-icon>
+                <h3 matLine>Performance Reviews</h3>
+                <p matLine>
+                    <span>-- coming soon!</span>
+                </p>
+            </mat-list-item>
         </mat-list>
-      
-      <div class="copy-wrap">
-          <p>(c) PW Designs 2017</p>
-      </div>
-  </mat-sidenav>
+
+        <div class="copy-wrap">
+            <p>(c) PW Designs 2017</p>
+        </div>
+    </mat-sidenav>
     
     <app-navbar></app-navbar>
     
     <button type="button" mat-button (click)="sidenav.open()" matTooltip="Expand Menu">
-      <mat-icon>menu</mat-icon>
+        <mat-icon>menu</mat-icon>
     </button>
 
     <div class="container-fluid">

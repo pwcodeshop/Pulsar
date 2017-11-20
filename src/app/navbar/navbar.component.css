@@ -1,13 +1,13 @@
-.example-icon {
-  padding: 0 14px;
-}
-
-.example-spacer {
+.spacer {
   flex: 1 1 auto;
 }
 .mat-menu-item {
     border-radius: 4px;
     margin-bottom: 5px;
+}
+.mat-menu-item .mat-icon {
+    vertical-align: middle;
+    line-height: 18px;
 }
 ::ng-deep .miniMenu .mat-menu-item:hover {
     background-color: #918cd6;
@@ -15,8 +15,4 @@
 
 ::ng-deep .mat-menu-content {
     padding: 8px 10px 0 10px;
-}
-.mat-menu-item .mat-icon {
-    vertical-align: middle;
-    line-height: 18px;
 }
